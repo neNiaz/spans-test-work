@@ -1,0 +1,54 @@
+@import "@/app/styles/variables/variables";
+
+.container {
+  max-width: 338px;
+  margin-bottom: 1.6rem;
+  width: 100%;
+  height: 4rem;
+  padding: 0.4rem;
+  border-radius: 3.2rem;
+  border: 1px solid $border-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &_control {
+    width: 50%;
+    border-radius: 3rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-3;
+
+    &_active {
+      color: $color-2;
+      background: $button-background--active;
+    }
+
+  }
+
+  &_image {
+    max-width: 348px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+
+    &s {
+      display: flex;
+      gap: 1.6rem;
+
+    }
+  }
+
+  &_separate {
+    margin-bottom: 1.6rem;
+
+  }
+}
+.container_font {
+  font-size: 1.8rem;
+}

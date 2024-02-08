@@ -1,0 +1,121 @@
+@import "../variables/variables";
+
+@mixin mobile-small() {
+  @media screen and (max-width: $mobile-small-max-width) {
+    @content;
+  }
+}
+
+@mixin mobile-medium-small() {
+  @media screen and (max-width: ($mobile-medium-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: ($tablet-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape() {
+  @media screen and (max-width: ($tablet-min-width - 1px)) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mobile-portrait() {
+  @media screen and (max-width: ($tablet-min-width - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin tablet-max() {
+  @media screen and (max-width: ($laptop-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape() {
+  @media screen and (min-width: $tablet-min-width) and (max-width: ($laptop-min-width - 1px)) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait() {
+  @media screen and (min-width: $tablet-min-width) and (max-width: ($laptop-min-width - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media screen and (min-width: $laptop-min-width) {
+    @content;
+  }
+}
+
+@mixin laptop-max() {
+  @media screen and (max-width: ($desktop-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop-max() {
+  @media screen and (max-width: ($desktop-large-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-large() {
+  @media screen and (min-width: $desktop-large-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop-large-max() {
+  @media screen and (max-width: ($desktop-x-large-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-x-large() {
+  @media screen and (min-width: $desktop-x-large-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop-x-large-max() {
+  @media screen and (max-width: ($desktop-xx-large-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-xx-large() {
+  @media screen and (min-width: $desktop-xx-large-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop-xx-large-max() {
+  @media screen and (max-width: ($desktop-extra-large-min-width - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop-extra-large() {
+  @media screen and (min-width: $desktop-extra-large-min-width) {
+    @content;
+  }
+}

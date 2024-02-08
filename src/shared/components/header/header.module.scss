@@ -1,0 +1,20 @@
+@import "@/app/styles/variables/variables";
+
+.container {
+  display: flex;
+  max-height: 7.2rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  &_info > ul {
+    display: flex;
+    gap: 1.5rem;
+    color: $color-5;
+    font-size: 1.8rem;
+    font-weight: 300;
+    align-items: center;
+    & > li {
+      display: flex;
+    }
+  }
+}

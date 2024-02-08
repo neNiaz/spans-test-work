@@ -1,0 +1,61 @@
+@import "@/app/styles/variables/variables";
+
+.container_button {
+  max-width: 348px;
+  min-width: 100px;
+  width: auto;
+  padding: .8rem 2rem;
+  height: 4rem;
+  border-radius: 3rem;
+  background: $color-4;
+  color: $color-2;
+  font-size: 1.8rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten($color-4, 20%);
+  }
+
+  &.outline-black {
+    background: $color-4;  }
+
+  &.outline-none {
+    background: none;
+  }
+
+  &.color-white {
+    color: $color-2;
+  }
+
+  &.variant-full {
+    background: black;
+    color: white;
+  }
+
+  &.variant-outline {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  &.variant-none {
+    background: transparent;
+  }
+
+  &.color-pink {
+    color: $color-6;
+
+    &:hover {
+      background-color: lighten($color-6, 20%);
+    }
+  }
+
+  &.variant-full-blue {
+      background: $button-background-1;
+      color: $color-7;
+
+      &:hover {
+        background: lighten($color-7, 20%);
+      }
+  }
+}

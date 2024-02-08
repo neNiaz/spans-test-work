@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  min-height: 100vh;
+}
+span, button, ul, li {
+  font-family: -apple-system, sans-serif;
+}
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+ul, li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  cursor: pointer;
+  user-select: none;
+}

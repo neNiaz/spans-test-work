@@ -1,0 +1,25 @@
+@import "@/app/styles/variables/variables";
+@import "@/app/styles/mixins/media-queries";
+
+.fileDrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &_active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &_text {
+    color: $color-2;
+    font-size: 2rem;
+  }
+}

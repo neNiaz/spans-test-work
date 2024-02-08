@@ -1,0 +1,49 @@
+@import "@/app/styles/variables/variables";
+@import "@/app/styles/mixins/media-queries";
+
+.container {
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  background: $color-2;
+
+  &_section_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    @include tablet-max {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &_section_image {
+    width: 50%;
+    background: $container-background;
+    & > picture > img {
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+      object-position: center center;
+    }
+
+    @include tablet-max {
+      display: none;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  &_close {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem;
+  }
+}

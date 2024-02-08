@@ -1,0 +1,39 @@
+@import "@/app/styles/mixins/media-queries";
+@import "@/app/styles/variables/variables";
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(125, 149, 252, 0.60);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_content {
+    display: flex;
+    width: 35rem;
+    height: auto;
+    background: var(--Very-light-blue, #F2F5FF);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    gap: 2.4rem;
+    border-radius: 3.2rem;
+
+    & > img {
+      max-width: 32rem;
+      max-height: 32rem;
+    }
+
+    @include mobile-medium-small {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

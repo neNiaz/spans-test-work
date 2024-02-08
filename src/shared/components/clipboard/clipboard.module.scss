@@ -1,0 +1,31 @@
+.container {
+  background: white;
+  border-radius: 3rem;
+  position: relative;
+  max-width: 32rem;
+  padding: 2rem 2.4rem;
+
+  &_wrapper {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_text {
+    color: var(--Grey, #A8ADC8);
+    text-overflow: ellipsis;
+    width: 90%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.6rem;
+  }
+
+  &_copy {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+@import "@/app/styles/variables/variables";
+
+
+.container {
+  height: 2rem;
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  &_dot {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    bottom: -10px;
+    background: $border-color;
+
+    &_active {
+      background: $color-3;
+    }
+  }
+}
